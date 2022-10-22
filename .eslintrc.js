@@ -1,22 +1,17 @@
 module.exports = {
+  extends: [
+    "@charrue/typescript",
+    "@charrue/vue3",
+  ],
   parser: "vue-eslint-parser",
   parserOptions: {
     parser: "@typescript-eslint/parser",
-    ecmaVersion: 2020,
-    sourceType: "module",
-    ecmaFeatures: {
-      jsx: true,
-    },
   },
-
-  extends: [
-    "plugin:vue/vue3-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "plugin:prettier/recommended",
-  ],
-
   rules: {
-    // override rules here
+    "import/no-unresolved": "off",
+    "vue/require-default-prop": "off",
+    "vue/one-component-per-file": "off",
+    "vue/multi-word-component-names": "off",
+    "no-console": "off",
   },
 };

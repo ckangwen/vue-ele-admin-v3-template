@@ -1,10 +1,16 @@
 <template>
-  <div class="flex justify-center">欢迎使用vite</div>
-  <a-button type="primary">Primary Button</a-button>
+  <div class="flex justify-center">
+    欢迎使用vite
+  </div>
+  <a-button type="primary">
+    Primary Button
+  </a-button>
 </template>
 
 <script>
-import { reactive, toRefs, onBeforeMount, onMounted } from "vue";
+import {
+  reactive, toRefs, onBeforeMount, onMounted,
+} from "vue";
 export default {
   name: "",
   setup() {

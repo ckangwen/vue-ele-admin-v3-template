@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 
 export const useUserStore = defineStore({
-  id: "user", // required 且唯一
+  id: "user",
   state: () => {
     return {
       name: "",
